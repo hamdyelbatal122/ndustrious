@@ -1,2 +1,3 @@
 # ndustrious
- WEB SITE TEMPALTE build by html css js
+ web site templated
+ build by html css js
