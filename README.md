@@ -1,3 +1,3 @@
 # ndustrious
- web site templated
+ web site template
  build by html css js
