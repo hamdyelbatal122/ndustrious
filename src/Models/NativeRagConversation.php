@@ -133,9 +133,9 @@ class NativeRagConversation extends Model
      *
      * @param  array<string, mixed>|null  $metadata
      */
-    public function addUserMessage(string $content, ?array $metadata = null): NativeRagMessage
+    public function addUserMessage(string $content, ?array $metadata = null, bool $prune = true): NativeRagMessage
     {
-        return $this->addMessage('user', $content, $metadata);
+        return $this->addMessage('user', $content, $metadata, null, $prune);
     }
 
     /**
@@ -143,9 +143,9 @@ class NativeRagConversation extends Model
      *
      * @param  array<string, mixed>|null  $metadata
      */
-    public function addAssistantMessage(string $content, ?array $metadata = null, ?int $tokens = null): NativeRagMessage
+    public function addAssistantMessage(string $content, ?array $metadata = null, ?int $tokens = null, bool $prune = true): NativeRagMessage
     {
-        return $this->addMessage('assistant', $content, $metadata, $tokens);
+        return $this->addMessage('assistant', $content, $metadata, $tokens, $prune);
     }
 
     /**

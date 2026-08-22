@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 class VectorSearchEngine
 {
     protected static bool $sqliteFunctionRegistered = false;
+
     /**
      * Search the database for the most similar chunks based on the provided embedding vector.
      *
